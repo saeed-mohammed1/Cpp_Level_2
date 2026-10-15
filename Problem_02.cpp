@@ -12,20 +12,20 @@
 #include <iostream>
 
 using namespace std;
-void PrintNumbers(int N, int M)
+void PrintNumbers(int M, int N)
 {
 
 	if (N <= M)
 	{
 		cout << M << endl;
 		
-		PrintNumbers(N, M - 1);
+		PrintNumbers(M - 1, N);
 	}
 }
 
 int main()
 {
-	PrintNumbers(1, 5);
+	PrintNumbers(10, 1);
 
 	return 0;
 }
